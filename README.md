@@ -28,7 +28,7 @@ Save time, makes code easier to test and read.
 We typically see controllers with code like this:
 
 ```
-public IActionResult SomeEndPoint()
+public ActionResult SomeEndPoint()
 {
    try
    {
