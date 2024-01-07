@@ -1,6 +1,8 @@
 # Introduction
-An example of using Asp.Net core Request pipeline.
-In this case, to add a centralized exception handler.
+An example for using a custom ASP.NET core middleware to handle exceptions for the application.
+When a web-app receives a request, this request is mapped into an object HttpRequest. The request passes through a series of chain of responsibility handlers (middleware),
+
+In this example, we added a custom one.
 
 https://learn.microsoft.com/en-us/aspnet/core/fundamentals/middleware/write?view=aspnetcore-7.0
 
