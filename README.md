@@ -6,6 +6,8 @@ In this example, we added a custom one.
 
 https://learn.microsoft.com/en-us/aspnet/core/fundamentals/middleware/write?view=aspnetcore-7.0
 
+Prepared by Julio Cachay
+
 # Running the project
 You will need Net 7 Sdk.
 
