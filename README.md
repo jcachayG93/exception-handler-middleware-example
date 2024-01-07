@@ -2,7 +2,7 @@
 An example of using Asp.Net core Request pipeline.
 In this case, to add a centralized exception handler.
 
-// https://learn.microsoft.com/en-us/aspnet/core/fundamentals/middleware/write?view=aspnetcore-7.0
+https://learn.microsoft.com/en-us/aspnet/core/fundamentals/middleware/write?view=aspnetcore-7.0
 
 # Running the project
 You will need Net 7 Sdk.
