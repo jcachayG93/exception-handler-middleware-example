@@ -1,6 +1,6 @@
 # Introduction
-An example for using a custom ASP.NET core middleware to handle exceptions for the application.
-When a web-app receives a request, this request is mapped into an object HttpRequest. The request passes through a series of chain of responsibility handlers (middleware),
+An example of using a custom ASP.NET core middleware to handle exceptions for the application.
+When a web app receives a request, this request is mapped into an object HttpRequest. The request passes through a series of chain of responsibility handlers (middleware),
 
 In this example, we added a custom one.
 
@@ -9,7 +9,7 @@ https://learn.microsoft.com/en-us/aspnet/core/fundamentals/middleware/write?view
 Prepared by Julio Cachay
 
 # Running the project
-You will need Net 7 Sdk.
+You need Net 7 Sdk.
 
 Run the tests:
 
@@ -40,9 +40,9 @@ public IActionResult SomeEndPoint()
    }   
 }
 ```
-This requires testing both cases, for each single endpoint, resulting in many lines of code and hours of work.
+This requires testing both cases, for each endpoint, resulting in many lines of code and hours of work.
 
-In some cases, corrective actions are more complex than just returning a Bad Request response. In such cases, that complexity is 
+In some cases, corrective actions are more complex than returning a Bad Request response. In such cases, that complexity is 
 duplicated in various end-points.
 
 ## Idea
@@ -56,12 +56,12 @@ public ActionResult<string> Ping()
 }
 ```
 
-Note that, in practice, this controller behaves exactly the same as the example above (we moved the Exception handling part 
+Note that, in practice, this controller behaves the same as the example above (we moved the Exception handling part 
 to a different place)
 
 There are two integration tests that call this endpoint.
 
-This one tests that when the code does not throw an exception, an Ok code with the response payload are returned
+This one tests that when the code does not throw an exception, an Ok code with the response payload is returned
 ```
     [Fact]
     public async Task Ping_OnSuccess_ReturnsOkWithPongResponse()
@@ -170,3 +170,4 @@ And, finally, the handler is added in the Request pipeline in program.cs
 ```
 app.AddCustomExceptionHandlingMiddleware();
 ```
+
