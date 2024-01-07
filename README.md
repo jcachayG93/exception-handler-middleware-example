@@ -46,7 +46,7 @@ In some cases, corrective actions are more complex than returning a Bad Request 
 duplicated in various end-points.
 
 ## Idea
-We can achieve the same using middleware. In this sample project, there is a single controller with a single endpoint
+We can achieve the same using middleware. In this example project, there is a single controller with a single endpoint
 
 ```
 [HttpGet("ping")]
